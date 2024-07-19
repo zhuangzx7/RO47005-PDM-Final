@@ -42,6 +42,16 @@ sudo apt-get install libarmadillo-dev
 
 **Step 2**. Install [OSQP](https://github.com/osqp/osqp), which is required by `traj_opt` package.
 
+This step requires that the osqp version be specified as v0.6.3.
+
+```
+git clone https://github.com/robotology/osqp-eigen.git
+cd osqp-eigen
+mkdir build && cd build
+cmake .. 
+make
+sudo make install
+```
 
 **Step 3**. clone this repo
 
